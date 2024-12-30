@@ -1,6 +1,6 @@
-#Todo Management Application (Spring Boot)
+# Todo Management Application (Spring Boot)
 
-##Setup Instructions
+## Setup Instructions
 
 Step 1: Clone the Repository
 
@@ -44,17 +44,17 @@ Step 5: Test the API
 		PUT	/api/todos/{id}	Update a todo
 		DELETE	/api/todos/{id}	Delete a todo
 		
-##Technologies Used
+## Technologies Used
 		
 Backend: Java, Spring Boot
 Database: MySQL, Spring JPA
 Security: Spring Security
 Build Tool: Maven
 
-##Contributing
+## Contributing
 
 Feel free to fork the repository and contribute. Raise a pull request for review.
 
-##License
+## License
 
 This project is licensed under the MIT License.
