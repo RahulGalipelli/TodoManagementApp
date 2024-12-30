@@ -1,0 +1,43 @@
+<h1 class="text-center my-3">Todo</h1>
+        <div class="form-container p-4 rounded shadow-sm">
+            <div class="alert alert-warning" *ngIf="todoForm.dirty && todoForm.invalid">Enter valid values</div>
+            <div class="alert alert-warning" *ngIf="todoForm.dirty && targetDate.invalid">Enter valid date</div>
+            <div class="alert alert-warning" *ngIf="todoForm.dirty && description.invalid">Enter minimum 5 characters</div>
+            <!-- Template Variables -todoForm-->
+
+            <form (ngSubmit)="!todoForm.invalid && saveTodo()" #todoForm = "ngForm">
+                <fieldset class="form-group">
+                    <label for="description" class="font-weight-bold">Description</label>
+                    <input
+                        [(ngModel)]="todo.description"
+                        #description = "ngModel"
+                        type="text"
+                        id="description"
+                        name="description"
+                        class="form-control"
+                        placeholder="Enter a description"
+                        required
+                        minlength="5"
+                    />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="targetDate" class="font-weight-bold">Target Date</label>
+                    <input
+                        [ngModel]="todo.targetDate | date: 'yyyy-MM-dd'"
+                        (ngModelChange)="todo.targetDate = $event"
+                        #targetDate = "ngModel"
+                        type="date"
+                        id="targetDate"
+                        name="targetDate"
+                        class="form-control"
+                        required
+                    />
+                </fieldset>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success mt-3 px-4 py-2">
+                        Save Todo
+                    </button>
+                </div>
+            </form>
+
+        </div>

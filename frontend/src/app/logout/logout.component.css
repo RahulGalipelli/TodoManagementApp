@@ -1,0 +1,38 @@
+/* Styling for the heading */
+.logout-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the message */
+.logout-message {
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ensure the content fits between the header and footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}

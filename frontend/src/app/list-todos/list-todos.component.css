@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered title styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 0.5rem;
+}
+
+/* Alert styling */
+.alert {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Table styling */
+.table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Buttons styling */
+.btn {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+

@@ -1,0 +1,30 @@
+<div class="container text-center my-5">
+    <p class="display-4">Welcome, {{name}}!</p>
+    <a routerLink="/{{name}}/list-todos" class="btn btn-primary btn-lg mt-3">View Todos</a>
+</div>
+<div class="container text-center my-5" *ngIf="showDescription">
+    <div class="container">
+        <p class="display-4">Get Customised message on click</p>
+    </div>
+    
+    <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
+</div>
+<div class="container text-center my-5" *ngIf="errorMessageFromService">  
+    <p class="display-4" style="color: brown; font-weight: 500;">{{errorMessageFromService}}</p>
+    
+</div>
+<div class="container text-center my-5" *ngIf="messageFromService">  
+    <div class="container">
+        <p class="display-4">Your Customised Welcome message</p>
+    </div>
+    <p class="display-6" style="color: rgb(67, 165, 42); font-weight: 500;">{{messageFromService}}</p>
+    
+</div>
+
+<!-- <form [formGroup]="myForm" (ngSubmit)="onSave()">
+    <label>
+        <input type="checkbox" formControlName="myCheckbox" />
+        My Checkbox
+    </label>
+    <button type="submit">Save</button>
+</form> -->

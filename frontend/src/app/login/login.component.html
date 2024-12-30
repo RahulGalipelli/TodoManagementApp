@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="heading-logo">
+        <h1>MyToDos</h1>
+    </div>
+    <div class="welcome-text">
+        Welcome back!
+    </div>
+    <div class="block">
+        <input class="input" type="text" name="username" [(ngModel)]="username" placeholder="Enter your username" />
+        <input class="input" type="password" name="password" [(ngModel)]="password" placeholder="Enter your password"/>
+    </div>
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+    <button (click)=handleJWTAuthLogin() class="btn btn-success">Login</button>
+    
+    <div class="signUpInfo">
+        <p>Not a member? <a href="">Sign up</a></p>
+        <a href="">Forgot your password?</a>
+    </div>
+    <div class="login-footer">
+        <p>By continuing, you agree to MyToDos <a href="">terms</a> and acknowledge you've read our <a href="">privacy policy</a>.</p>
+    </div>
+</div>
